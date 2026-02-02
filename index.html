@@ -5,91 +5,102 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
+		<!-- Skip-link -->
+		<a href="#main" class="skip">Skip to main content</a>
 		<!-- Navigasjon og header: -->
-		<header>
-			<nav aria-label="Main navigation" class="main-nav">
-				<h1>Evento</h1>
+		<header class="header">
+			<img class="logo" src="" alt="Logo">
+			<nav class="navbar">
 				<ul>
-					<li><a href="#Events">Events</a></li>
-					<li><a href="#Venues">Venues</a></li>
-					<li><a href="#About">About</a></li>
-					<li><a href="#Contact">Contact</a></li>
-				</ul>
+					<li><a href="">Event</a></li>
+					<li><a href="">Venues</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Contact</a></li>
+				</ul> 
+			</nav>
+			<form class="search-field" action="#" method="get" role="search">
+				<label for="search">Search:</label>
+				<input type="search" id="search" name="q">
+				<button type="submit" aria-label="Search"><i class="fa fa-fw fa-search"></i></button>
+			</form>
+			<a href="#"><i class="fa fa-fw fa-user"></i></a>
 				<!-- Add Hamburger Meny -->
 			</nav>
 		</header>
-		<hr />
 
-		<!-- Event-informasjon: -->
-		<section class="event-info-container">
-			<!-- Med SVG ikoner for event-info -->
-			<h2>Tech Conference 2025</h2>
-			<p class="event-info">March 15-17, 2025</p>
-			<p class="event-info">Oslo Congress Center</p>
-			<p class="event-info">12 Speakers</p>
-			<p class="event-info">From €299</p>
-		</section>
-		<hr />
+		<main id="main">
+			<!-- Event-informasjon: -->
+			<section class="event-info-container">
+				<!-- Med SVG ikoner for event-info -->
+				<h2>Tech Conference 2025</h2>
+				<p class="event-info">March 15-17, 2025</p>
+				<p class="event-info">Oslo Congress Center</p>
+				<p class="event-info">12 Speakers</p>
+				<p class="event-info">From €299</p>
+			</section>
+			<hr />
 
-		<!-- Sidebar here afterwards -->
+			<!-- Sidebar here afterwards -->
 
-		<!-- Registreringsskjema: -->
-		<section class="registration-container">
-			<header>
-				<h2>REGISTER</h2>
-			</header>
-			<article>
-				<!-- Choose ticket type -->
+			<!-- Registreringsskjema: -->
+			<section class="registration-container">
 				<header>
-					<h3>Ticket Type</h3>
+					<h2>REGISTER</h2>
 				</header>
-				<input type="radio" id="earlyBird" value="Early Bird" />
-				<label for="earlyBird">Early Bird</label>
-				<input type="radio" id="regular" value="Regular" />
-				<label for="Regular">Regular</label>
-				<input type="radio" id="VIP" value="VIP" />
-				<label for="VIP">VIP</label>
-			</article>
-			<hr />
-			<article>
-				<!-- Chooose quantity of the tickets -->
-				<header class="quantity-container">
-					<h3>Quantity</h3>
-				</header>
-				<button>+</button>
-				<button>-</button>
-			</article>
-			<hr />
-			<article>
-				<!-- Company/Customer Information -->
-				<label for="fname">First Name:</label>
-				<input type="text" id="fname" /><br /><br />
-				<label for="email">Email</label>
-				<input type="text" id="email" /><br /><br />
-				<label for="company">Company</label>
-				<input type="text" id="company" />
-			</article>
-			<hr />
-			<article>
-				<label for="diet">Dietary Needs</label><br /><br />
-				<select id="diet">
-					<option value="lactose">Lactose Intolerant</option>
-					<option value="nut-allergy">Nut Allergy</option>
-				</select>
-			</article>
+				<article>
+					<!-- Choose ticket type -->
+					<header>
+						<h3>Ticket Type</h3>
+					</header>
+					<input type="radio" id="earlyBird" value="Early Bird" />
+					<label for="earlyBird">Early Bird</label>
+					<input type="radio" id="regular" value="Regular" />
+					<label for="Regular">Regular</label>
+					<input type="radio" id="VIP" value="VIP" />
+					<label for="VIP">VIP</label>
+				</article>
+				<hr />
+				<article>
+					<!-- Chooose quantity of the tickets -->
+					<header class="quantity-container">
+						<h3>Quantity</h3>
+					</header>
+					<button>+</button>
+					<button>-</button>
+				</article>
+				<hr />
+				<article>
+					<!-- Company/Customer Information -->
+					<label for="fname">First Name:</label>
+					<input type="text" id="fname" /><br /><br />
+					<label for="email">E-mail:</label>
+					<input type="text" id="email" /><br /><br />
+					<label for="company">Company: </label>
+					<input type="text" id="company" />
+				</article>
+				<hr />
+				<article>
+					<label for="diet">Dietary Needs</label><br /><br />
+					<select id="diet">
+						<option value="lactose">Lactose Intolerant</option>
+						<option value="nut-allergy">Nut Allergy</option>
+					</select>
+				</article>
 
-			<hr />
-			<br />
-			<input type="checkbox" id="terms" />
-			<label for="terms">Agree to terms and conditions*</label>
-			<br />
-			<button>Submit</button>
-		</section>
+				<hr />
+				<br />
+				<input type="checkbox" id="terms" />
+				<label for="terms">Agree to terms and conditions*</label>
+				<br />
+				<button>Submit</button>
+			</section>
 
-		<!-- Todo: 1. Change br and hr with CSS -->
-		<!-- Todo: Add ARIA-labels for all registration -->
-		<!-- Todo: Add a sidebar (hamburger meny - mobile first) -->
+			<!-- Todo: 1. Change br and hr with CSS -->
+			<!-- Todo: Add ARIA-labels for all registration -->
+			<!-- Todo: Add a sidebar (hamburger meny - mobile first) -->
+		</main>
 	</body>
 </html>
