@@ -1,3 +1,117 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* SKIP LINK */
+
+.skip {
+	position: absolute;
+	left: -9999px;
+	top: auto;
+}
+
+.skip:focus {
+	left: 10px;
+	top: 10px;
+	background: black;
+	color: white;
+	padding: 12px 16px;
+	z-index: 1000;
+	text-decoration: none;
+	border-radius: 4px;
+}
+
+/* HEADER */
+
+.header {
+	border-bottom: 1px solid lightgrey;
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+	gap: 20px;
+}
+
+/* LOGO */
+
+.logo {
+	width: 120px;
+	height: auto;
+}
+
+/* NAVIGATION */
+
+.navbar {
+	flex: 1;
+}
+
+.navbar ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.navbar a:hover,
+.header > a:last-of-type:hover {
+	text-decoration: underline;
+}
+
+/* SEARCH */
+
+.search-field {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+input[type="search"] {
+	padding: 6px 10px;
+	border: 1px solid #aaa;
+	border-radius: 4px;
+}
+
+.search-field button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+/* USER LINK */
+
+.header > a:last-of-type {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	text-decoration: none;
+	color: black;
+}
+
+main {
+	margin: 25px 20px;
+	
+}
+
+hr {
+	margin: 25px 0;
+	border: 1px solid lightgrey
+}
+
+h2, h3 {
+	margin-bottom: 10px;
+}
+
+#terms {
+	margin-bottom: 20px;
+}
+
 /* .quantity-container {
 	display: flex;
 } */
@@ -6,6 +120,7 @@
 @media (min-width: 1025px) {
 }
 
+<<<<<<< HEAD
 .iconAndSentence{
 	display: flex;
 }
@@ -31,3 +146,5 @@ body{
 .extra-info-container{
 	grid-area:extra-info-container;
 }
+=======
+>>>>>>> e31375e99eb54a2678fd74c41192d753ef56cdf4
