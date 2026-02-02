@@ -12,10 +12,15 @@
 		<a href="#main" class="skip">Skip to main content</a>
 		<!-- Navigasjon og header: -->
 		<header class="header">
-			<img class="logo" src="" alt="Logo">
+			<div>
+				<svg height="40" width="200" xmlns="http://www.w3.org/2000/svg">
+					<text x="5" y="30" fill="none" stroke="black" font-size="35" font-weight="bold" font-family="Verdana" letter-spacing="2px" rotate="15">Evently</text>
+					Sorry, your browser does not support inline SVG.
+				</svg>
+			</div>
 			<nav class="navbar">
 				<ul>
-					<li><a href="">Event</a></li>
+					<li><a href="">Events</a></li>
 					<li><a href="">Venues</a></li>
 					<li><a href="">About</a></li>
 					<li><a href="">Contact</a></li>
@@ -24,9 +29,21 @@
 			<form class="search-field" action="#" method="get" role="search">
 				<label for="search">Search:</label>
 				<input type="search" id="search" name="q">
-				<button type="submit" aria-label="Search"><i class="fa fa-fw fa-search"></i></button>
+				<button type="submit" aria-label="Search">
+					<svg width="30" height="30">
+						<line x1="15" y1="15" x2="30" y2="30" stroke-width="2" stroke="black"></line>
+						<circle cx="15" cy="15" r="7" fill="white" stroke="black" stroke-width="2"></circle>            
+                	</svg>
+				</button>
 			</form>
-			<a href="#"><i class="fa fa-fw fa-user"></i></a>
+			<div>
+				<a href="#">
+					<svg class="user" width="30px" height="30px">
+						<circle cx="15" cy="13" r="7" fill="black"></circle>
+						<circle cx="15" cy="30" r="11" fill="black"></circle>
+					</svg>
+				</a>
+			</div>
 				<!-- Add Hamburger Meny -->
 			</nav>
 		</header>
