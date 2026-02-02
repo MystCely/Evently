@@ -120,31 +120,7 @@ h2, h3 {
 @media (min-width: 1025px) {
 }
 
-<<<<<<< HEAD
 .iconAndSentence{
 	display: flex;
 }
 
-body{
-	display: grid;
-	grid-template-columns: 40% 60%;
-	grid-template-rows: 20% 30% 40%;
-	grid-template-areas: "main-nav main-nav"
-						"head head"
-						"registration-container extra-info-container";
-}
-
-.event-info-container{
-	grid-area: head;
-}
-.registration-container{
-	grid-area: registration-container;
-}
-.main-nav{
-	grid-area: main-nav;
-}
-.extra-info-container{
-	grid-area:extra-info-container;
-}
-=======
->>>>>>> e31375e99eb54a2678fd74c41192d753ef56cdf4
