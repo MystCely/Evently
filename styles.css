@@ -5,3 +5,7 @@
 /* TODO: DOUBLE CHECK */
 @media (min-width: 1025px) {
 }
+
+.iconAndSentence{
+	display: flex;
+}
