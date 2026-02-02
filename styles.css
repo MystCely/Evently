@@ -28,7 +28,7 @@
 	border-bottom: 1px solid lightgrey;
 	display: flex;
 	align-items: center;
-	padding: 10px 20px;
+	padding: 20px 20px;
 	gap: 20px;
 }
 
@@ -95,13 +95,16 @@ input[type="search"] {
 }
 
 main {
-	margin: 25px 20px;
+	margin: 25px auto;
+	width: 80%;
 	
 }
 
 hr {
 	margin: 25px 0;
-	border: 1px solid lightgrey
+	height: 1px;
+    background-color: lightgrey;
+    border: none;
 }
 
 h2, h3 {
