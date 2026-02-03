@@ -1,3 +1,35 @@
+.qty-decrease:hover{
+	animation-duration: 3s;
+	animation-name: button-animation;
+}
+.qty-decrease{
+	width: 30px;
+	height: 20px;
+}
+.qty-increase{
+	width: 30px;
+	height: 20px;
+}
+.qty-increase:hover{
+	animation-duration: 3s;
+	animation-name: button-animation;
+}
+.submit-button{
+	width: 70px;
+	height: 20px;
+}
+.submit-button:hover{
+	animation-duration: 3s;
+	animation-name: submit-button-animation;
+}
+@keyframes button-animation{
+	from {widht: 30px; height: 20px}
+	to {width: 45px; height: 30px;}
+}
+@keyframes submit-button-animation{
+	from {width: 70px; height: 20px}
+	to {width: 100px; height: 30px;}
+}
 * {
 	margin: 0;
 	box-sizing: border-box;
