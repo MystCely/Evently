@@ -119,7 +119,7 @@ input[type="search"] {
 
 /* MAIN CONTENT */
 
-/* Mobile first <480px */
+/* Mobile first: 1 column <690px */
 
 main {
 	margin: 25px auto;
@@ -178,9 +178,9 @@ h3 {
 	margin-bottom: 20px;
 }
 
-/* TABLET 481-1024px */
+/* TABLET 690-1024px */
 
-@media (min-width: 481px) {
+@media (min-width: 690px) {
 	body {
         grid-template-columns: minmax(0, 1100px);
         justify-content: center;
@@ -217,7 +217,6 @@ h3 {
         grid-template-columns: 400px 1fr;
         gap: 40px;
     }
-}
 
 .registration-container {
         padding: 24px;
@@ -232,6 +231,7 @@ h3 {
         justify-content: space-between;
         gap: 15px;
     }
+}
 
 /* ADDITIONAL CSS */
 
