@@ -221,9 +221,6 @@ h3 {
 
 .registration-container {
         padding: 24px;
-        position: sticky;
-        top: 30px; /* Skjema følger scroll litt */
-        height: fit-content;
     }
 
     .extra-info {
