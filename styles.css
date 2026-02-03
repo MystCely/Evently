@@ -234,10 +234,12 @@ h3 {
 	animation-name: button-animation;
 }
 .qty-decrease{
+	background-color: lightgrey;
 	width: 30px;
 	height: 20px;
 }
 .qty-increase{
+	background-color: lightgrey;
 	width: 30px;
 	height: 20px;
 }
@@ -246,6 +248,7 @@ h3 {
 	animation-name: button-animation;
 }
 .submit-button{
+	background-color: lightgrey;
 	width: 70px;
 	height: 20px;
 }
@@ -254,10 +257,10 @@ h3 {
 	animation-name: submit-button-animation;
 }
 @keyframes button-animation{
-	from {widht: 30px; height: 20px}
-	to {width: 45px; height: 30px;}
+	from {widht: 30px; height: 20px; background-color: lightgrey}
+	to {width: 45px; height: 30px; background-color: white}
 }
 @keyframes submit-button-animation{
-	from {width: 70px; height: 20px}
-	to {width: 100px; height: 30px;}
+	from {width: 70px; height: 20px;background-color: lightgrey}
+	to {width: 100px; height: 30px; background-color: white}
 }
