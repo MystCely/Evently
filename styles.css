@@ -212,8 +212,10 @@ h3 {
 @media (min-width: 1024px) {
 }
 
-.iconAndSentence {
+.icon-and-sentence {
 	display: flex;
+	border: black 1px solid;
+	padding: 20px;
 }
 
 #speakers {
