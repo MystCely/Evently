@@ -100,11 +100,12 @@ main {
 hr {
 	margin: 25px 0;
 	height: 1px;
-    background-color: lightgrey;
-    border: none;
+	background-color: lightgrey;
+	border: none;
 }
 
-h2, h3 {
+h2,
+h3 {
 	margin-bottom: 10px;
 }
 
@@ -112,23 +113,19 @@ h2, h3 {
 	margin-bottom: 20px;
 }
 
-/* .quantity-container {
-	display: flex;
-} */
-
 /* TODO: DOUBLE CHECK */
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 }
 
-.iconAndSentence{
+.iconAndSentence {
 	display: flex;
 }
 
-#speakers{
+#speakers {
 	border: black 2px solid;
 }
 
-.extra-info{
+.extra-info {
 	border: black solid 1px;
 	text-align: center;
 }
