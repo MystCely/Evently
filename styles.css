@@ -235,6 +235,7 @@ h3 {
     #speakers {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         gap: 15px;
     }
 }
@@ -251,6 +252,12 @@ select {
 }
 
 /* Button hover animations */
+
+.qty-decrease,
+.qty-increase,
+.submit-button {
+    transition: all 0.3s ease;
+}
 
 .qty-decrease:hover{
 	animation-duration: 3s;
