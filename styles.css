@@ -3,6 +3,19 @@
 	box-sizing: border-box;
 }
 
+/* PAGE LAYOUT GRID */
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main";
+}
+
+.header { grid-area: header; }
+main { grid-area: main; }
+
 /* SKIP LINK */
 
 .skip {
@@ -25,11 +38,25 @@
 /* HEADER */
 
 .header {
-	border-bottom: 1px solid lightgrey;
-	display: flex;
-	align-items: center;
-	padding: 20px 20px;
-	gap: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 0; /* Ikke side-padding lenger */
+    border-bottom: 1px solid lightgrey;
+}
+
+.header,
+main {
+    width: 92%;
+    margin: 0 auto;
+}
+
+@media (min-width: 1025px) {
+    .header,
+    main {
+        width: min(1200px, 90%);
+    }
 }
 
 /* NAVIGATION */
@@ -96,7 +123,6 @@ input[type="search"] {
 
 main {
 	margin: 25px auto;
-	width: 92%;
     display: grid;
     gap: 25px;
 	grid-template-columns: 1fr;
@@ -143,6 +169,10 @@ h3 {
 /* TABLET 481-1024px */
 
 @media (min-width: 481px) {
+	body {
+        grid-template-columns: minmax(0, 1100px);
+        justify-content: center;
+    }
 
     main {
         grid-template-columns: 320px 1fr;
@@ -155,7 +185,7 @@ h3 {
     .event-info-container {
         display: grid;
         grid-template-columns: repeat(2, auto);
-        gap: 10px 30px;
+        gap: 10px 40px;
         align-items: center;
     }
 
@@ -167,6 +197,10 @@ h3 {
 /* DESKTOP 1025px */
 
 @media (min-width: 1025px) {
+	body {
+        grid-template-columns: minmax(0, 1200px);
+    }
+
     main {
 		width: min(1200px, 90%);
         grid-template-columns: 400px 1fr;
@@ -193,26 +227,12 @@ h3 {
 
 /* ADDITIONAL CSS */
 
-/* Event-icons: one row on bigger screens */
-
-@media (min-width: 600px) {
-    .event-info-container {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        gap: 10px 40px;
-    }
-
-    .event-info-container h2 {
-        grid-column: 1 / -1;
-    }
-}
-
 /* Extra desktop styling */
 
 @media (min-width: 1024px) {
 }
 
-.icon-and-sentence {
+.iconAndSentence {
 	display: flex;
 	border: black 1px solid;
 	padding: 20px;
@@ -223,7 +243,6 @@ h3 {
 }
 
 .extra-info {
-	border: black solid 1px;
 	text-align: center;
 }
 
@@ -257,8 +276,13 @@ h3 {
 	animation-name: submit-button-animation;
 }
 @keyframes button-animation{
+<<<<<<< Updated upstream
 	from {widht: 30px; height: 20px; background-color: lightgrey}
 	to {width: 45px; height: 30px; background-color: white}
+=======
+	from {width: 30px; height: 20px}
+	to {width: 45px; height: 30px;}
+>>>>>>> Stashed changes
 }
 @keyframes submit-button-animation{
 	from {width: 70px; height: 20px;background-color: lightgrey}
