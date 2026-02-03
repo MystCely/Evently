@@ -9,7 +9,7 @@
 	<body>
 		<!-- Skip-link -->
 		<a href="#main" class="skip">Skip to main content</a>
-		<!-- Navigasjon og header: -->
+		<!-- Navigasjon og header -->
 		<header class="header">
 			<div class="brand-and-toggle">
 				<div class="brand">
@@ -32,11 +32,11 @@
 					</a>
 				</div>
 			</div>
-			
+			<!-- Hamburger-meny-opplegg -->
 			<input id="nav-toggle" class="nav-toggle" type="checkbox" />
 
 			<label for="nav-toggle" class="hamburger" role="button" aria-controls="primary-nav">
-				<span class="sr-only" aria-hidden="true">Menu</span>
+				<span class="sr-only">Menu</span>
 				<span class="hamburger-bar" aria-hidden="true"></span>
 				<span class="hamburger-bar" aria-hidden="true"></span>
 				<span class="hamburger-bar" aria-hidden="true"></span>
@@ -49,30 +49,29 @@
 					<li><a href="#">About</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
-			</nav>
-
-			<form class="search-field" action="#" method="get" role="search" aria-label="Site search">
-				<label for="search">Search:</label>
-				<input type="search" id="search" name="q" />
-				<button type="submit" aria-label="Search">
+				<!-- Bruker-ikon -->
+				<a href="#" class="user-link" aria-label="User account">
 					<svg viewbox="0 0 30 30" width="30" height="30" aria-hidden="true" role="img">
-						<line x1="15" y1="15" x2="30" y2="30" stroke-width="2" stroke="black"></line>
-						<circle cx="15" cy="15" r="7" fill="white" stroke="black" stroke-width="2"></circle>
+						<circle cx="15" cy="13" r="7" fill="black"></circle>
+						<circle cx="15" cy="30" r="11" fill="black"></circle>
 					</svg>
-				</button>
-			</form>
-
-			<a href="#" class="user-link" aria-label="User account">
-				<svg viewbox="0 0 30 30" width="30" height="30" aria-hidden="true" role="img">
-					<circle cx="15" cy="13" r="7" fill="black"></circle>
-					<circle cx="15" cy="30" r="11" fill="black"></circle>
-				</svg>
-			</a>
+				</a>
+				<!-- Søkefelt -->
+				<form class="search-field" action="#" method="get" role="search" aria-label="Site search">
+					<label for="search"></label>
+					<input type="search" id="search" name="q" placeholder="Search..."/>
+					<button type="submit" aria-label="Search">
+						<svg viewbox="0 0 30 30" width="30" height="30" aria-hidden="true" role="img">
+							<line x1="15" y1="15" x2="30" y2="30" stroke-width="2" stroke="black"></line>
+							<circle cx="15" cy="15" r="7" fill="white" stroke="black" stroke-width="2"></circle>
+						</svg>
+					</button>
+				</form>
+			</nav>
 		</header>
 
 		<main id="main">
 			<!-- Event-informasjon: -->
-
 			<section class="event-info-container">
 				<!-- Med SVG ikoner for event-info -->
 				<h2>Tech Conference 2025</h2>
@@ -118,7 +117,6 @@
 				</div>
 			</section>
 			<hr />
-
 			<!-- Registreringsskjema: -->
 			<section class="registration-container" aria-labelledby="register-heading">
 				<header>

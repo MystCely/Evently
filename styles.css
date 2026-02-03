@@ -63,6 +63,9 @@ main {
 
 .navbar {
 	flex: 1;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .navbar ul {
@@ -83,6 +86,14 @@ main {
 .navbar a:hover,
 .header > a:last-of-type:hover {
 	text-decoration: underline;
+}
+
+.navbar .user-link {
+    margin: 15px 0 5px;
+}
+
+.navbar .search-field {
+    margin-bottom: 20px;
 }
 
 /* SEARCH */
@@ -117,9 +128,89 @@ input[type="search"] {
 	color: black;
 }
 
-/* MAIN CONTENT */
+/* MOBILE FIRST < 690px */
 
-/* Mobile first: 1 column <690px */
+/* Hamburger-button */
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger-bar {
+    width: 28px;
+    height: 3px;
+    background: black;
+    border-radius: 2px;
+}
+
+/* Skjul checkbox */
+.nav-toggle {
+    display: none;
+}
+
+/* MOBILE NAV (default) */
+
+.navbar {
+    position: absolute;
+    top: 80px; /* juster etter header høyde */
+    left: 0;
+    width: 100%;
+    background: white;
+    border-top: 1px solid #ddd;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+
+	/* Stable innhold vertikalt og la søk ligge nederst */
+	align-items: stretch;
+    text-align: center;
+}
+
+.navbar ul,
+.navbar .user-link,
+.navbar .search-field {
+    width: 100%;
+}
+
+.navbar .search-field {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.navbar ul {
+    flex-direction: column;
+    gap: 0;
+}
+
+.navbar li {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+/* Når checkbox er huket av -> vis meny */
+.nav-toggle:checked ~ .navbar {
+    max-height: 300px; /* stor nok til alle lenker */
+}
+
+.sr-only {
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* MAIN CONTENT */
 
 main {
 	margin: 25px auto;
@@ -218,6 +309,45 @@ h3 {
 	body {
         grid-template-columns: minmax(0, 1200px);
     }
+
+	.hamburger {
+        display: none;
+    }
+
+    .navbar {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 30px;
+
+		position: static;
+		max-height: none;
+		background: transparent;
+		border: none;
+	}
+
+    .navbar ul {
+        display: flex;
+		flex-direction: row;
+		gap: 30px;
+		order: 1;
+    }
+
+    .navbar li {
+        border: none;
+        padding: 0;
+    }
+
+	.navbar .search-field {
+		order: 2;
+		margin-left: auto;
+		margin-bottom: 0;
+	}
+
+	.navbar .user-link {
+		order: 3;
+    	margin-left: 10px;
+	}
 
     main {
         grid-template-columns: 400px 1fr;
