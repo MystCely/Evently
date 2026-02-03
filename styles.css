@@ -166,6 +166,12 @@ h3 {
 	text-align: center;
 }
 
+.form label,
+.form input {
+    display: block;
+    margin-bottom: 10px;
+}
+
 #speakers {
     margin: 20px;
     padding: 15px;
