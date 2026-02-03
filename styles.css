@@ -278,6 +278,9 @@ h3 {
 @keyframes button-animation{
 	from {widht: 30px; height: 20px; background-color: lightgrey}
 	to {width: 45px; height: 30px; background-color: white}
+
+	from {width: 30px; height: 20px; background-color: lightgrey}
+	to {width: 45px; height: 30px; background-color: white}
 }
 @keyframes submit-button-animation{
 	from {width: 70px; height: 20px;background-color: lightgrey}
