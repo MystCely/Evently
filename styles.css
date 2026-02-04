@@ -5,6 +5,9 @@
 
 /* PAGE LAYOUT GRID */
 
+html{
+    scroll-behavior: smooth;
+}
 body {
     display: grid;
     grid-template-columns: 1fr;
