@@ -148,7 +148,7 @@ input[type="search"] {
 	color: black;
 }
 
-/* MOBILE FIRST < 690px */
+/* MOBILE FIRST < 700px */
 
 /* Hamburger-button */
 
@@ -310,9 +310,9 @@ h3 {
 	margin-bottom: 20px;
 }
 
-/* TABLET 690-1024px */
+/* TABLET 700-1024px */
 
-@media (min-width: 690px) {
+@media (min-width: 700px) {
 	body {
         grid-template-columns: minmax(0, 1100px);
         justify-content: center;
