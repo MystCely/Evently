@@ -195,7 +195,7 @@ input[type="search"] {
 
 /* Når checkbox er huket av -> vis meny */
 .nav-toggle:checked ~ .navbar {
-    max-height: 300px; /* stor nok til alle lenker */
+    max-height: 425px; /* stor nok til alle lenker */
 }
 
 .sr-only {
