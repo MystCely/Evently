@@ -15,12 +15,15 @@ body {
 
 .presenters{
     display:flex;
+    -ms-flex-align: center;
 }
 input[type="radio"]{
     display: none;
 }
 input[type="radio"] + label svg{
     fill: white;
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
 }
 input[type="radio"]:checked + label svg{
