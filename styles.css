@@ -9,6 +9,7 @@ html{
     scroll-behavior: smooth;
 }
 body {
+    font-family: 'Open Sans', sans-serif;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -19,7 +20,7 @@ body {
 .presenters{
     display:flex;
     -ms-flex-align: center;
-    font-size: clamp(1rem, 2.5vw,2rem)
+    font-size: clamp(1rem, 2.5vw, 1.5rem)
 }
 input[type="radio"]{
     display: none;
@@ -122,7 +123,6 @@ main {
 	display: flex;
 	align-items: center;
 	gap: 6px;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 0.9rem;
 }
 
@@ -272,7 +272,8 @@ h3 {
 
 .icon-and-sentence {
 	display: flex;
-    font-size: clamp(1rem, 2.5vw,2rem);
+    font-size: clamp(1rem, 2.5vw,1.5rem);
+    font-weight: lighter;
 	align-items: center;
 	border: 1px solid black;
 	padding: 12px;
