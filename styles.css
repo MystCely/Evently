@@ -148,6 +148,7 @@ input[type="search"] {
 /* Hamburger-button */
 
 .hamburger {
+	margin-left: auto;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -181,7 +182,7 @@ input[type="search"] {
     transition: max-height 0.3s ease;
 
 	/* Stable innhold vertikalt og la søk ligge nederst */
-	align-items: stretch;
+	display: block;
     text-align: center;
 }
 
@@ -194,18 +195,29 @@ input[type="search"] {
 .navbar .search-field {
     margin-top: 15px;
     margin-bottom: 20px;
+	display: flex;
     justify-content: center;
+	padding: 15px 0 20px;
 }
 
 .navbar ul {
     flex-direction: column;
     gap: 0;
+	list-style: none;
+    padding: 10px;
+    margin: 0;
 }
 
 .navbar li {
     padding: 15px;
     text-align: center;
     border-bottom: 1px solid #eee;
+}
+
+.navbar li a {
+    display: block;
+    width: 100%;
+    padding: 5px 0;
 }
 
 /* Når checkbox er huket av -> vis meny */
