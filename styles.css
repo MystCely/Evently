@@ -19,6 +19,7 @@ body {
 .presenters{
     display:flex;
     -ms-flex-align: center;
+    font-size: clamp(1rem, 2.5vw,2rem)
 }
 input[type="radio"]{
     display: none;
@@ -271,6 +272,7 @@ h3 {
 
 .icon-and-sentence {
 	display: flex;
+    font-size: clamp(1rem, 2.5vw,2rem);
 	align-items: center;
 	border: 1px solid black;
 	padding: 12px;
