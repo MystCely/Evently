@@ -198,10 +198,9 @@ input[type="search"] {
 
 .navbar .search-field {
     margin-top: 15px;
-    margin-bottom: 20px;
 	display: flex;
     justify-content: center;
-	padding: 15px 0 20px;
+	padding: 5px 0 5px;
 }
 
 .navbar ul {
@@ -360,6 +359,8 @@ h3 {
 		max-height: none;
 		background: transparent;
 		border: none;
+
+		min-width: 0;
 	}
 
     .navbar ul {
@@ -378,6 +379,12 @@ h3 {
 		order: 2;
 		margin-left: auto;
 		margin-bottom: 0;
+		min-width: 0;
+	}
+
+	.search-field input {
+		width: 160px;
+		max-width: 100%;
 	}
 
 	.navbar .user-link {
