@@ -425,6 +425,7 @@ h3 {
 
 input[type="text"],
 input[type="number"],
+input[type="email"],
 select {
     width: 100%;
     padding: 8px;
@@ -433,32 +434,32 @@ select {
 }
 
 /* Button hover animations */
+.quantity-controls {
+    display: flex;
+    flex-direction: row;
+}
+
+.quantity-controls .qty-input {
+    width: 2.5rem;
+    height: 30px; 
+}
 
 .qty-decrease,
 .qty-increase,
 .submit-button {
     transition: all 0.3s ease;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    padding: 8px;
 }
 
-.qty-decrease{
-	background-color: lightgrey;
-	width: 30px;
-	height: 20px;
-}
-.qty-increase{
-	background-color: lightgrey;
-	width: 30px;
-	height: 20px;
-}
 .qty-increase:hover{
 	animation-duration: 3s;
 	animation-name: button-animation;
 }
-.submit-button{
-	background-color: lightgrey;
-	width: 70px;
-	height: 20px;
-}
+
 .submit-button:hover{
 	animation-duration: 3s;
 	animation-name: submit-button-animation;
