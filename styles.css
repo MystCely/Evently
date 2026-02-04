@@ -27,6 +27,7 @@ input[type="radio"]{
 input[type="radio"] + label svg{
     fill: white;
     display: flex;
+    border: black solid 1px;
     flex-direction: column;
     cursor: pointer;
 }
@@ -432,10 +433,6 @@ select {
     transition: all 0.3s ease;
 }
 
-.qty-decrease:hover{
-	animation-duration: 3s;
-	animation-name: button-animation;
-}
 .qty-decrease{
 	background-color: lightgrey;
 	width: 30px;
@@ -458,6 +455,10 @@ select {
 .submit-button:hover{
 	animation-duration: 3s;
 	animation-name: submit-button-animation;
+}
+.qty-decrease:hover{
+	animation-duration: 3s;
+	animation-name: button-animation;
 }
 
 @keyframes button-animation{
