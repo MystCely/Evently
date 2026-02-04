@@ -241,7 +241,7 @@ input[type="search"] {
     border: 0;
 }
 
-/* MAIN CONTENT */
+/* MAIN */
 
 main {
 	margin: 25px auto;
@@ -354,21 +354,16 @@ h3 {
 	}
 
     .header {
-        /* 1. Define the grid exactly as you envisioned */
         display: grid;
         grid-template-columns: auto 1fr auto auto;
         align-items: center;
-        gap: 30px; /* Adds consistent space between all columns */
+        gap: 30px;
         border-bottom: 1px solid gray;
-        
-        /* Ensure specific width */
         width: min(1200px, 90%);
         margin: 0 auto;
     }
 
-	/* 2. THE SECRET SAUCE: display: contents */
-    /* This makes the <nav> invisible to the grid, promoting its children 
-       (UL, User, Search) to sit directly in the Header's grid columns. */
+    /* Gjør <nav> usynlig for grid'en for å posisjonere UL, User og Search bedre i header. */
     .navbar {
         display: contents;
     }
@@ -380,7 +375,6 @@ h3 {
 		list-style: none;
         padding: 0;
         margin: 0;
-        /* Align links to the left (start) of the '1fr' space */
         justify-self: start;
     }
 
@@ -392,7 +386,7 @@ h3 {
 	.navbar .search-field {
 		margin: 0;
         display: flex;
-        order: 3; /* Ensures visual order matches grid column */
+        order: 3;
 	}
 
 	.search-field input {
@@ -425,7 +419,7 @@ h3 {
     }
 }
 
-/* ADDITIONAL CSS */
+/* EXTRA CSS */
 
 input[type="text"],
 input[type="number"],
