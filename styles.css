@@ -56,7 +56,6 @@ main { grid-area: main; }
     align-items: center;
     gap: 16px;
     padding: 20px 0;
-    border-bottom: 1px solid lightgrey;
 }
 
 .header,
@@ -172,7 +171,7 @@ input[type="search"] {
     left: 0;
     width: 100%;
     background: white;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid gray;
 
     max-height: 0;
     overflow: hidden;
@@ -208,7 +207,7 @@ input[type="search"] {
 
 /* Når checkbox er huket av -> vis meny */
 .nav-toggle:checked ~ .navbar {
-    max-height: 300px; /* stor nok til alle lenker */
+    max-height: 425px; /* stor nok til alle lenker */
 }
 
 .sr-only {
@@ -326,6 +325,10 @@ h3 {
 	.hamburger {
         display: none;
     }
+
+	.header {
+		border-bottom: 1px solid gray;
+	}
 
     .navbar {
 		display: flex;
