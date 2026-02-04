@@ -13,6 +13,19 @@ body {
         "main";
 }
 
+.presenters{
+    display:flex;
+}
+input[type="radio"]{
+    display: none;
+}
+input[type="radio"] + label svg{
+    fill: white;
+    cursor: pointer;
+}
+input[type="radio"]:checked + label svg{
+    fill: red;
+}
 .header { grid-area: header; }
 main { grid-area: main; }
 
