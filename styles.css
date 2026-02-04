@@ -29,6 +29,7 @@ input[type="radio"] + label svg{
     fill: white;
     display: flex;
     border: black solid 1px;
+    background-color: black;
     flex-direction: column;
     cursor: pointer;
 }
