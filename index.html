@@ -1,50 +1,57 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="styles.css" />
+		<!-- Fonts -->
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+		</style>
 	</head>
 	<body>
 		<!-- Skip-link -->
 		<a href="#main" class="skip">Skip to main content</a>
 		<!-- Navigasjon og header -->
 		<header class="header">
-			<div class="brand-and-toggle">
-				<div class="brand">
-					<a href="" aria-label="Home">
-						<svg viewbox="00 00 200 40" width="200" height="40" aria-label="Evently logo" role="img">
-							<text
-								x="5"
-								y="30"
-								fill="none"
-								stroke="black"
-								font-size="35"
-								font-weight="bold"
-								font-family="Verdana"
-								letter-spacing="2px"
-								rotate="15">
-								Evently
-							</text>
-							Sorry, your browser does not support inline SVG.
-						</svg>
-					</a>
-				</div>
+			<div class="brand">
+				<a href="" aria-label="Home">
+					<svg viewbox="00 00 200 40" width="200" height="40" aria-label="Evently logo" role="img">
+						<text
+							x="5"
+							y="30"
+							fill="none"
+							stroke="black"
+							font-size="35"
+							font-weight="bold"
+							font-family="DM Sans"
+							letter-spacing="2px"
+							rotate="15"
+						>
+							Evently
+						</text>
+						Sorry, your browser does not support inline SVG.
+					</svg>
+				</a>
 			</div>
 			<!-- Hamburger-meny-opplegg -->
 			<input id="nav-toggle" class="nav-toggle" type="checkbox" />
+			<div class="header-actions">
+				<label for="nav-toggle" class="hamburger" role="button" aria-controls="primary-nav">
+					<span class="sr-only">Menu</span>
+					<span class="hamburger-bar" aria-hidden="true"></span>
+					<span class="hamburger-bar" aria-hidden="true"></span>
+					<span class="hamburger-bar" aria-hidden="true"></span>
+				</label>
+			</div>
 
-			<label for="nav-toggle" class="hamburger" role="button" aria-controls="primary-nav">
-				<span class="sr-only">Menu</span>
-				<span class="hamburger-bar" aria-hidden="true"></span>
-				<span class="hamburger-bar" aria-hidden="true"></span>
-				<span class="hamburger-bar" aria-hidden="true"></span>
-			</label>
-			
 			<nav id="primary-nav" class="navbar" aria-label="Primary navigation">
 				<ul>
 					<li><a href="#" aria-current="page">Events</a></li>
@@ -52,24 +59,26 @@
 					<li><a href="#">About</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
-				<!-- Bruker-ikon -->
-				<a href="#" class="user-link" aria-label="User account">
-					<svg viewbox="0 0 30 30" width="30" height="30" aria-hidden="true" role="img">
-						<circle cx="15" cy="13" r="7" fill="black"></circle>
-						<circle cx="15" cy="30" r="11" fill="black"></circle>
-					</svg>
-				</a>
-				<!-- Søkefelt -->
-				<form class="search-field" action="#" method="get" role="search" aria-label="Site search">
-					<label for="search"></label>
-					<input type="search" id="search" name="q" placeholder="Search..."/>
-					<button type="submit" aria-label="Search">
+				<div class="nav-actions">
+					<!-- Søkefelt -->
+					<form class="search-field" action="#" method="get" role="search" aria-label="Site search">
+						<label for="search"></label>
+						<input type="search" id="search" name="q" placeholder="Search..." />
+						<button type="submit" aria-label="Search">
+							<svg viewbox="0 0 30 30" width="30" height="30" aria-hidden="true" role="img">
+								<line x1="15" y1="15" x2="30" y2="30" stroke-width="2" stroke="black"></line>
+								<circle cx="15" cy="15" r="7" fill="white" stroke="black" stroke-width="2"></circle>
+							</svg>
+						</button>
+					</form>
+					<!-- Bruker-ikon -->
+					<a href="#" class="user-link" aria-label="User account">
 						<svg viewbox="0 0 30 30" width="30" height="30" aria-hidden="true" role="img">
-							<line x1="15" y1="15" x2="30" y2="30" stroke-width="2" stroke="black"></line>
-							<circle cx="15" cy="15" r="7" fill="white" stroke="black" stroke-width="2"></circle>
+							<circle cx="15" cy="13" r="7" fill="black"></circle>
+							<circle cx="15" cy="30" r="11" fill="black"></circle>
 						</svg>
-					</button>
-				</form>
+					</a>
+				</div>
 			</nav>
 		</header>
 
@@ -155,11 +164,11 @@
 
 				<article class="form">
 					<label for="fname">First Name:</label>
-					<input type="text" id="fname" name="fname" required/>
+					<input type="text" id="fname" name="fname" required />
 					<label for="email">E-mail:</label>
-					<input type="email" id="email" name="email" required/>
+					<input type="email" id="email" name="email" required />
 					<label for="company">Company: </label>
-					<input type="text" id="company" name="company"/>
+					<input type="text" id="company" name="company" />
 				</article>
 
 				<hr />
@@ -175,56 +184,82 @@
 
 				<hr />
 
-				<div class="terms">
-					<input type="checkbox" id="terms" name="terms" />
-					<label for="terms">Agree to terms and conditions*</label>
+				<footer class="terms">
+					<label for="terms" class="terms-label">
+						<input type="checkbox" id="terms" name="terms" />
+						<span>Agree to terms and conditions*</span>
+					</label>
 					<button class="submit-button">Submit</button>
-				</div>
+				</footer>
 			</section>
-			
+
 			<section class="extra-info" aria-labelledby="about-heading">
 				<h2 id="about-heading">About the event</h2>
 				<p>Join 500+ developers for three days of hands on workshops, keynotes, and networking.</p>
 
-				<div id="speakers" class="speakers" aria-label="Featured speakers">
+				<article id="speakers" class="speakers" aria-label="Featured speakers">
 					<p><strong>Featured Speakers</strong></p>
-					<div class="presenters">
-						<input id="jane-heart-input" name="presenter" type="radio" value="jane">
-						<label for="jane-heart-input">						<svg viewBox="0 0 24 24" width="24" height="24" aria-label="Hjerte-ikon" id="jane-heart">
-							<path
-							d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-							stroke="black"
-							/>
-						</svg>Jane</label>
-					</div>
-					<div class="presenters">
-						<input id="john-heart-input" name="presenter" type="radio" value="john">
-						<label for="john-heart-input">						<svg viewBox="0 0 24 24" width="24" height="24" aria-label="Hjerte-ikon" id="john-heart">
-							<path
-							d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-							stroke="black"
-							/>
-						</svg>John</label>
-					</div>
-					<div class="presenters">
-						<input id="anna-heart-input" name="presenter" type="radio" value="anna">
-						<label for="anna-heart-input">						<svg viewBox="0 0 24 24" width="24" height="24" aria-label="Hjerte-ikon" id="anna-heart">
-							<path
-							d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-							stroke="black"
-							/>
-						</svg>Anna</label>
-					</div>
-				</div>
-				
-				<p><strong>Schedule Highlights</strong></p>
-				<ul>
-					<li>Day 1: Frontend Trends</li>
-					<li>Day 2: Performance Optimization</li>
-					<li>Day 3: Workshop Sessions</li>
-				</ul>
+					<article class="presenters">
+						<input id="jane-heart-input" name="presenter" type="radio" value="jane" />
+						<label for="jane-heart-input">
+							<svg viewBox="0 0 24 24" width="24" height="24" aria-label="Hjerte-ikon" id="jane-heart">
+								<path
+									d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+									2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09
+									C13.09 3.81 14.76 3 16.5 3
+									19.58 3 22 5.42 22 8.5
+									c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+									stroke="black"
+								/>
+							</svg>
+							Jane
+						</label>
+					</article>
 
-				<p><a href="#">[View full schedule]</a></p>
+					<article class="presenters">
+						<input id="john-heart-input" name="presenter" type="radio" value="john" />
+						<label for="john-heart-input">
+							<svg viewBox="0 0 24 24" width="24" height="24" aria-label="Hjerte-ikon" id="john-heart">
+								<path
+									d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+									2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09
+									C13.09 3.81 14.76 3 16.5 3
+									19.58 3 22 5.42 22 8.5
+									c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+									stroke="black"
+								/>
+							</svg>
+							John
+						</label>
+					</article>
+
+					<article class="presenters">
+						<input id="anna-heart-input" name="presenter" type="radio" value="anna" />
+						<label for="anna-heart-input">
+							<svg viewBox="0 0 24 24" width="24" height="24" aria-label="Hjerte-ikon" id="anna-heart">
+								<path
+									d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+									2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09
+									C13.09 3.81 14.76 3 16.5 3
+									19.58 3 22 5.42 22 8.5
+									c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+									stroke="black"
+								/>
+							</svg>
+							Anna
+						</label>
+					</article>
+				</article>
+
+				<article class="highlights-container">
+					<p><strong>Schedule Highlights</strong></p>
+					<ul class="highlights-list">
+						<li>Day 1: Frontend Trends</li>
+						<li>Day 2: Performance Optimization</li>
+						<li>Day 3: Workshop Sessions</li>
+					</ul>
+					<p><a href="#">[View full schedule]</a></p>
+				</article>
 			</section>
 		</main>
 	</body>
