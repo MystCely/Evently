@@ -23,12 +23,12 @@
 		<header class="header">
 			<div class="brand">
 				<a href="" aria-label="Home">
-					<svg viewbox="00 00 200 40" width="200" height="40" aria-label="Evently logo" role="img">
+					<svg viewBox="00 00 200 40" width="200" height="40" aria-label="Evently logo" role="img">
 						<text
 							x="5"
 							y="30"
-							fill="none"
-							stroke="black"
+								fill="currentColor"
+								stroke="none"
 							font-size="35"
 							font-weight="bold"
 							font-family="DM Sans"
@@ -59,21 +59,21 @@
 					<li><a href="#">About</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
-				<div class="nav-actions">
-					<!-- Søkefelt -->
-					<form class="search-field" action="#" method="get" role="search" aria-label="Site search">
-						<label for="search"></label>
-						<input type="search" id="search" name="q" placeholder="Search..." />
+					<div class="nav-actions">
+						<!-- Søkefelt -->
+						<form class="search-field" action="#" method="get" role="search" aria-label="Site search">
+							<label for="search" class="sr-only">Search</label>
+							<input type="search" id="search" name="q" placeholder="Search..." />
 						<button type="submit" aria-label="Search">
-							<svg viewbox="0 0 30 30" width="30" height="30" aria-hidden="true" role="img">
-								<line x1="15" y1="15" x2="30" y2="30" stroke-width="2" stroke="black"></line>
-								<circle cx="15" cy="15" r="7" fill="white" stroke="black" stroke-width="2"></circle>
+							<svg viewBox="0 0 30 30" width="30" height="30" aria-hidden="true" role="img">
+								<circle cx="12" cy="12" r="7" fill="white" stroke="black" stroke-width="2"></circle>
+								<line x1="17" y1="17" x2="26" y2="26" stroke-width="2" stroke="black"></line>
 							</svg>
 						</button>
 					</form>
 					<!-- Bruker-ikon -->
 					<a href="#" class="user-link" aria-label="User account">
-						<svg viewbox="0 0 30 30" width="30" height="30" aria-hidden="true" role="img">
+						<svg viewBox="0 0 30 30" width="30" height="30" aria-hidden="true" role="img">
 							<circle cx="15" cy="13" r="7" fill="black"></circle>
 							<circle cx="15" cy="30" r="11" fill="black"></circle>
 						</svg>
@@ -87,8 +87,8 @@
 			<section class="event-info-container">
 				<!-- Med SVG ikoner for event-info -->
 				<h2>Tech Conference 2025</h2>
-				<div class="icon-and-sentence">
-					<svg viewbox="0 0 100 40" width="100" height="40" aria-hidden="true" role="img">
+					<div class="icon-and-sentence">
+						<svg viewBox="0 0 100 40" width="100" height="40" aria-hidden="true" role="img">
 						<rect x="0" y="0" width="40" height="30" fill="blue" stroke="grey"></rect>
 						<rect x="0" y="10" width="40" height="30" fill="white" stroke="grey"></rect>
 						<rect x="0" y="10" width="10" height="10" fill="white" stroke="grey"></rect>
@@ -104,48 +104,48 @@
 						<rect x="30" y="20" width="10" height="10" fill="white" stroke="grey"></rect>
 						<rect x="30" y="30" width="10" height="10" fill="white" stroke="grey"></rect>
 					</svg>
-					<b class="event-info">March 15-17, 2025</b>
-				</div>
-				<div class="icon-and-sentence">
-					<svg viewbox="0 0 100 30" width="100" height="30" aria-hidden="true" role="img">
+						<strong class="event-info">March 15-17, 2025</strong>
+					</div>
+					<div class="icon-and-sentence">
+						<svg viewBox="0 0 100 30" width="100" height="30" aria-hidden="true" role="img">
 						<line x1="20" y1="10" x2="20" y2="40" stroke-width="2" stroke="grey"></line>
 						<circle cx="20" cy="10" r="5" fill="red" stroke="red" stroke-width="4"></circle>
 					</svg>
-					<b class="event-info">Oslo Congress Center</b>
-				</div>
-				<div class="icon-and-sentence">
-					<svg viewbox="0 0 100 30" width="100" height="30" aria-hidden="true" role="img">
+						<strong class="event-info">Oslo Congress Center</strong>
+					</div>
+					<div class="icon-and-sentence">
+						<svg viewBox="0 0 100 30" width="100" height="30" aria-hidden="true" role="img">
 						<polygon points="20,10 10,15 30,15" stroke="black" stroke-width="6" fill="grey"></polygon>
 						<circle cx="30" cy="10" r="7" fill="grey" stroke="black" stroke-width="4"></circle>
 					</svg>
-					<b class="event-info">12 Speakers</b>
-				</div>
-				<div class="icon-and-sentence">
-					<svg viewbox="0 0 100 30" width="100" height="30" aria-hidden="true" role="img">
+						<strong class="event-info">12 Speakers</strong>
+					</div>
+					<div class="icon-and-sentence">
+						<svg viewBox="0 0 100 30" width="100" height="30" aria-hidden="true" role="img">
 						<rect x="0" y="0" width="40" height="30" fill="green"></rect>
 						<circle cx="20" cy="15" r="10" fill="lightgreen" stroke="darkgreen" stroke-width="4"></circle>
 					</svg>
-					<b class="event-info">From €299</b>
-				</div>
-			</section>
+						<strong class="event-info">From €299</strong>
+					</div>
+				</section>
 			<hr />
 			<!-- Registreringsskjema: -->
-			<section class="registration-container" aria-labelledby="register-heading">
+			<form class="registration-container" aria-labelledby="register-heading" action="#" method="post">
 				<header>
 					<h2 id="register-heading">REGISTER</h2>
 				</header>
 
 				<article class="ticket-type">
 					<h3>Ticket Type</h3>
-					<div class="radio-group" aria-label="Ticket type">
-						<input type="radio" id="earlyBird" value="Early Bird" />
-						<label for="earlyBird">Early Bird</label>
-						<input type="radio" id="regular" value="Regular" />
-						<label for="regular">Regular</label>
-						<input type="radio" id="VIP" value="VIP" />
-						<label for="VIP">VIP</label>
-					</div>
-				</article>
+						<div class="radio-group" aria-label="Ticket type">
+							<input type="radio" id="earlyBird" name="ticketType" value="Early Bird" />
+							<label for="earlyBird">Early Bird</label>
+							<input type="radio" id="regular" name="ticketType" value="Regular" />
+							<label for="regular">Regular</label>
+							<input type="radio" id="VIP" name="ticketType" value="VIP" />
+							<label for="VIP">VIP</label>
+						</div>
+					</article>
 
 				<hr />
 
@@ -155,10 +155,10 @@
 					</header>
 					<div class="quantity-controls" aria-label="Ticket quantity">
 						<button type="button" class="qty-decrease" aria-label="Decrease quantity">+</button>
-						<input type="number" class="qty-input" value="1" aria-label="Ticket quantity" />
-						<button type="button" class="qty-increase" aria-label="Increase quantity">-</button>
-					</div>
-				</article>
+					<input type="number" class="qty-input" value="1" aria-label="Ticket quantity" />
+					<button type="button" class="qty-increase" aria-label="Increase quantity">-</button>
+				</div>
+			</article>
 
 				<hr />
 
@@ -189,67 +189,69 @@
 						<input type="checkbox" id="terms" name="terms" />
 						<span>Agree to terms and conditions*</span>
 					</label>
-					<button class="submit-button">Submit</button>
+					<button class="submit-button" type="submit">Submit</button>
 				</footer>
-			</section>
+			</form>
 
 			<section class="extra-info" aria-labelledby="about-heading">
 				<h2 id="about-heading">About the event</h2>
 				<p>Join 500+ developers for three days of hands on workshops, keynotes, and networking.</p>
 
-				<article id="speakers" class="speakers" aria-label="Featured speakers">
-					<p><strong>Featured Speakers</strong></p>
-					<article class="presenters">
-						<input id="jane-heart-input" name="presenter" type="radio" value="jane" />
-						<label for="jane-heart-input">
-							<svg viewBox="0 0 24 24" width="24" height="24" aria-label="Hjerte-ikon" id="jane-heart">
-								<path
-									d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
-									2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09
-									C13.09 3.81 14.76 3 16.5 3
-									19.58 3 22 5.42 22 8.5
-									c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-									stroke="black"
-								/>
-							</svg>
-							Jane
-						</label>
-					</article>
+				<section id="speakers" class="speakers" aria-labelledby="speakers-heading">
+					<h3 id="speakers-heading">Featured Speakers</h3>
+					<ul class="presenters-list">
+						<li class="presenters">
+							<input id="jane-heart-input" name="presenter" type="radio" value="jane" />
+							<label for="jane-heart-input">
+								<svg viewBox="0 0 24 24" width="24" height="24" aria-label="Hjerte-ikon" id="jane-heart">
+									<path
+										d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+										2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09
+										C13.09 3.81 14.76 3 16.5 3
+										19.58 3 22 5.42 22 8.5
+										c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+										stroke="black"
+									/>
+								</svg>
+								Jane
+							</label>
+						</li>
 
-					<article class="presenters">
-						<input id="john-heart-input" name="presenter" type="radio" value="john" />
-						<label for="john-heart-input">
-							<svg viewBox="0 0 24 24" width="24" height="24" aria-label="Hjerte-ikon" id="john-heart">
-								<path
-									d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
-									2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09
-									C13.09 3.81 14.76 3 16.5 3
-									19.58 3 22 5.42 22 8.5
-									c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-									stroke="black"
-								/>
-							</svg>
-							John
-						</label>
-					</article>
+						<li class="presenters">
+							<input id="john-heart-input" name="presenter" type="radio" value="john" />
+							<label for="john-heart-input">
+								<svg viewBox="0 0 24 24" width="24" height="24" aria-label="Hjerte-ikon" id="john-heart">
+									<path
+										d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+										2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09
+										C13.09 3.81 14.76 3 16.5 3
+										19.58 3 22 5.42 22 8.5
+										c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+										stroke="black"
+									/>
+								</svg>
+								John
+							</label>
+						</li>
 
-					<article class="presenters">
-						<input id="anna-heart-input" name="presenter" type="radio" value="anna" />
-						<label for="anna-heart-input">
-							<svg viewBox="0 0 24 24" width="24" height="24" aria-label="Hjerte-ikon" id="anna-heart">
-								<path
-									d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
-									2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09
-									C13.09 3.81 14.76 3 16.5 3
-									19.58 3 22 5.42 22 8.5
-									c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-									stroke="black"
-								/>
-							</svg>
-							Anna
-						</label>
-					</article>
-				</article>
+						<li class="presenters">
+							<input id="anna-heart-input" name="presenter" type="radio" value="anna" />
+							<label for="anna-heart-input">
+								<svg viewBox="0 0 24 24" width="24" height="24" aria-label="Hjerte-ikon" id="anna-heart">
+									<path
+										d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+										2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09
+										C13.09 3.81 14.76 3 16.5 3
+										19.58 3 22 5.42 22 8.5
+										c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+										stroke="black"
+									/>
+								</svg>
+								Anna
+							</label>
+						</li>
+					</ul>
+				</section>
 
 				<article class="highlights-container">
 					<p><strong>Schedule Highlights</strong></p>

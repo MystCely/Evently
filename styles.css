@@ -6,19 +6,20 @@
 :root {
 	--font-body: "DM Sans", sans-serif;
 
-	--page-bg: #f7f7f9;
-	--text-color: #111318;
-	--accent-color: #cbd5e1;
-	--color-black: #111111;
+	--page-bg: #1f2328;
+	--text-color: #e6edf3;
+	--accent-color: #8dc6ff;
+	--color-black: #e6edf3;
 	--color-white: #ffffff;
-	--color-border: #e2e8f0;
-	--color-border-light: #eef2f7;
-	--color-border-input: #cfd8e3;
-	--color-surface: #ffffff;
-	--color-surface-alt: #f1f5f9;
-	--color-divider-light: #e2e8f0;
-	--color-divider: #cbd5e1;
-	--color-accent-strong: #e11d48;
+	--color-border: #3a434d;
+	--color-border-light: #444c56;
+	--color-border-input: #5b6773;
+	--color-surface: #2b3138;
+	--color-surface-alt: #242a31;
+	--color-divider: #3a434d;
+	--color-accent-strong: #8dc6ff;
+	--color-accent-strong-hover: #e4f1fe;
+	--header-bg: #2b3138;
 	--radius-sm: 0.375rem;
 	--radius-md: 0.75rem;
 	--shadow-sm: 0 8px 24px rgba(15, 23, 42, 0.08);
@@ -62,8 +63,24 @@ body {
 	font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
+.presenters label {
+	font-size: 1rem;
+}
+
+.presenters-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: var(--space-2);
+}
+
 input[type="radio"]:checked + label svg {
 	fill: var(--color-accent-strong);
+}
+
+.presenters label svg {
+	fill: var(--text-color);
 }
 
 .header {
@@ -95,19 +112,23 @@ main {
 /* HEADER */
 
 .header {
-	border-bottom: 1px solid var(--color-divider-light);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	gap: var(--space-5);
 	padding: var(--page-padding);
 	position: relative;
+	background-color: var(--header-bg);
+	width: 100%;
 }
 
 .header,
 main {
-	width: 92%;
 	margin: 0 auto;
+}
+
+main {
+	width: 92%;
 }
 
 @media (min-width: 1025px) {
@@ -195,6 +216,31 @@ input[type="search"] {
 	text-decoration: none;
 }
 
+.header .brand {
+	color: var(--text-color);
+}
+
+.header .brand svg text {
+	fill: var(--text-color);
+	stroke: none;
+}
+
+.header .search-field svg circle {
+	fill: none;
+	stroke: var(--text-color);
+	stroke-width: 2px;
+}
+
+.header .search-field svg line {
+	stroke: var(--text-color);
+	stroke-width: 2px;
+	stroke-linecap: round;
+}
+
+.header .user-link svg circle {
+	fill: var(--text-color);
+}
+
 /* MOBILE FIRST < 700px */
 
 /* Hamburger-button */
@@ -227,7 +273,7 @@ input[type="search"] {
 	left: 50%;
 	width: 100vw;
 	transform: translateX(-50%);
-	background-color: var(--page-bg);
+	background-color: var(--header-bg);
 	z-index: 10;
 
 	max-height: 0;
@@ -263,6 +309,7 @@ input[type="search"] {
 }
 
 .navbar li {
+	font-size: 1.25rem;
 	padding: var(--space-4);
 	text-align: center;
 	border-bottom: 1px solid var(--color-border-light);
@@ -366,6 +413,11 @@ h3 {
 	gap: var(--space-3);
 }
 
+#speakers h3 {
+	font-size: 1.25rem;
+	margin: 0;
+}
+
 #speakers input[type="radio"] {
 	display: none;
 }
@@ -382,6 +434,20 @@ h3 {
 
 .highlights-container p {
 	padding: var(--space-2);
+}
+
+.highlights-container a {
+	color: var(--color-accent-strong);
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.highlights-container a:hover {
+	text-decoration: underline;
+}
+
+.highlights-container a {
+	text-decoration: none;
 }
 
 .highlights-list {
@@ -481,15 +547,11 @@ h3 {
 	}
 
 	.header {
-		border-bottom: 1px solid var(--color-divider);
-	}
-
-	.header {
 		display: flex;
 		align-items: center;
 		gap: var(--space-7);
-		border-bottom: 1px solid var(--color-divider);
-		width: min(1600px, 95%);
+		background-color: var(--header-bg);
+		width: min(1600px, 100%);
 		margin: 0 auto;
 	}
 
@@ -603,6 +665,12 @@ input[type="number"] {
 	font-weight: bold;
 	padding: var(--space-2);
 }
+
+.submit-button {
+	background-color: var(--color-accent-strong);
+	border-color: var(--color-accent-strong);
+	color: var(--color-white);
+}
 .submit-button {
 	margin-top: var(--space-2);
 }
@@ -614,6 +682,14 @@ input[type="number"] {
 	box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
 	background-color: var(--color-surface-alt);
 	border-color: var(--color-divider);
+}
+
+.submit-button:hover,
+.qty-increase:hover,
+.qty-decrease:hover {
+	background-color: var(--color-accent-strong-hover);
+	border-color: var(--color-accent-strong-hover);
+	color: var(--color-border);
 }
 
 .qty-increase:active,
@@ -629,7 +705,6 @@ input[type="number"] {
 	outline: 2px solid var(--color-accent-strong);
 	outline-offset: 2px;
 }
-
 @media (prefers-reduced-motion: reduce) {
 	.qty-decrease,
 	.qty-increase,
