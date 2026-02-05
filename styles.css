@@ -9,7 +9,7 @@
 	--page-bg: #1f2328;
 	--text-color: #e6edf3;
 	--accent-color: #8dc6ff;
-	--color-black: #e6edf3;
+	--color-black: #000000;
 	--color-white: #ffffff;
 	--color-border: #3a434d;
 	--color-border-light: #444c56;
@@ -156,7 +156,7 @@ main {
 
 .navbar a {
 	text-decoration: none;
-	color: var(--color-black);
+	color: var(--text-color);
 	font-family: var(--font-body);
 	font-weight: bold;
 	letter-spacing: 1px;
@@ -221,24 +221,24 @@ input[type="search"] {
 }
 
 .header .brand svg text {
-	fill: var(--text-color);
+	fill: var(--accent-color);
 	stroke: none;
 }
 
 .header .search-field svg circle {
 	fill: none;
-	stroke: var(--text-color);
+	stroke: var(--accent-color);
 	stroke-width: 2px;
 }
 
 .header .search-field svg line {
-	stroke: var(--text-color);
+	stroke: var(--accent-color);
 	stroke-width: 2px;
 	stroke-linecap: round;
 }
 
 .header .user-link svg circle {
-	fill: var(--text-color);
+	fill: var(--accent-color);
 }
 
 /* MOBILE FIRST < 700px */
@@ -256,7 +256,7 @@ input[type="search"] {
 .hamburger-bar {
 	width: 28px;
 	height: 3px;
-	background: var(--color-black);
+	background: var(--text-color);
 	border-radius: 2px;
 }
 
@@ -619,10 +619,6 @@ h3 {
 
 /* EXTRA CSS */
 
-.evently-logo {
-	
-}
-
 input[type="text"],
 input[type="number"],
 input[type="email"],
@@ -673,7 +669,7 @@ input[type="number"] {
 .submit-button {
 	background-color: var(--color-accent-strong);
 	border-color: var(--color-accent-strong);
-	color: var(--color-white);
+	color: var(--color-black);
 }
 .submit-button {
 	margin-top: var(--space-2);
@@ -693,7 +689,7 @@ input[type="number"] {
 .qty-decrease:hover {
 	background-color: var(--color-accent-strong-hover);
 	border-color: var(--color-accent-strong-hover);
-	color: var(--color-border);
+	color: var(--color-black);
 }
 
 .qty-increase:active,
