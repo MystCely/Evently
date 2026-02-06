@@ -34,6 +34,8 @@
 	--space-8: 2.5rem;
 	--space-neg-1: -1px;
 
+	--letter-spacing: 1px;
+
 	--page-padding: var(--space-5);
 }
 
@@ -433,7 +435,7 @@ h3 {
 /* Schedule Highlights */
 .highlights-list li {
 	padding: var(--space-1);
-	letter-spacing: 1px;
+	letter-spacing: var(--letter-spacing);
 }
 
 .highlights-container p {
@@ -682,6 +684,7 @@ input[type="number"] {
 }
 .submit-button {
 	margin-top: var(--space-2);
+	letter-spacing: var(--letter-spacing);
 }
 
 .qty-increase:hover,
