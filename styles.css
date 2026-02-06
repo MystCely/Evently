@@ -432,8 +432,8 @@ h3 {
 
 /* Schedule Highlights */
 .highlights-list li {
-	list-style: none;
 	padding: var(--space-1);
+	letter-spacing: 1px;
 }
 
 .highlights-container p {
@@ -455,7 +455,7 @@ h3 {
 }
 
 .highlights-list {
-	margin: 0;
+	margin: var(--space-6);
 	padding: 0;
 	display: grid;
 	gap: var(--space-1);
